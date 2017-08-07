@@ -19,3 +19,15 @@ echo $filenamesec.'<br>';
 echo $filenamethree;
 
 echo '<hr>';
+
+//获取域名或主机地址
+$Server = $_SERVER['HTTP_HOST'];
+echo $Server.'<hr>';
+
+//获取网页地址
+$page = $_SERVER['PHP_SELF'];
+echo $page.'<hr>';
+
+//包含端口号的完整URL
+$url = 'http://' . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'];
+echo $url;
